@@ -1,0 +1,23 @@
+{
+  "extends": "@quasar/app-webpack/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["*"],
+      "@/*": ["./src/*"],
+      "/#/*": ["./types/*"]
+      // "@vab/*": ["./library/*"],
+      // "@gp": ["./library/plugins/vab"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    // "mock/**/*.ts",
+    "types/**/*.d.ts"
+    // "library/**/*.ts",
+    // "library/**/*.tsx",
+    // "library/**/*.vue"
+  ]
+}

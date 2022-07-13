@@ -1,0 +1,13 @@
+{
+  "extends": "@quasar/app-webpack/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["*"],
+      "@/*": ["./src/*"],
+      "/#/*": ["./types/*"]
+      // "@vab/*": ["./library/*"],
+      // "@gp": ["./library/plugins/vab"]
+    }
+  }
+}
